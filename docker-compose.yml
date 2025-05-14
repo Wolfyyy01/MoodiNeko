@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  server:
+    build: ./server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server:/app
+    command: bun run src/index.ts
+
+  client:
+    build: ./client
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./client:/app
+    command: npm run dev

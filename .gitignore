@@ -1,0 +1,15 @@
+# Global
+.env
+*.log
+.DS_Store
+
+# Backend
+/server/node_modules
+/server/bun.lockb
+/server/.env
+
+# Frontend
+/client/node_modules
+/client/.env
+/client/dist
+/client/build
