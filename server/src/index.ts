@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { recommendRoute } from './routes/recommend';
+import { recommendRoute } from './controllers/recommend';
 
 const app = new Hono();
 

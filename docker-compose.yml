@@ -1,12 +1,20 @@
 version: "3.9"
+
 services:
   server:
     build: ./server
     ports:
       - "3000:3000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
     volumes:
       - ./server:/app
+    working_dir: /app
     command: bun run src/index.ts
+    depends_on:
+      - redis
 
   client:
     build: ./client
@@ -14,4 +22,17 @@ services:
       - "5173:5173"
     volumes:
       - ./client:/app
+    working_dir: /app
     command: npm run dev
+    depends_on:
+      - server
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
