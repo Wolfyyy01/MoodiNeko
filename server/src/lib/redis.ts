@@ -5,3 +5,14 @@ export const redis = new Redis({
   port: Number(process.env.REDIS_PORT) || 6379,
   password: process.env.REDIS_PASSWORD,
 });
+
+// Connect to Redis
+redis.on("connect", () => {
+  console.log("Connected to Redis");
+});
+
+// Handle Redis connection errors
+redis.on("error", (err) => {
+  console.error("Redis connection error:", err);
+  process.exit(1);
+});

@@ -1,12 +1,14 @@
-import { Hono } from 'hono';
+import {Hono} from 'hono';
+import {cors} from 'hono/cors';
 import { recommendRoute } from './controllers/recommend';
 
 const app = new Hono();
+const PORT = process.env.PORT || 3000;
 
-// Adaugă ruta pentru recomandări
+app.use('*',cors())
 app.post('/recommend', recommendRoute);
 
 export default { 
-  port: process.env.PORT || 3000, 
+  port: PORT, 
   fetch: app.fetch, 
 } 
