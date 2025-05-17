@@ -10,6 +10,4 @@ services:
   - key: PORT
     value: 3000 # Render setează automat portul, dar îl poți folosi din process.env.PORT
   - key: REDIS_URL
-    fromService:
-      type: redis
-      name: MoodiNekoRedis
+    value: redis://red-d0k8qkbe5dus73bioa6g:6379
