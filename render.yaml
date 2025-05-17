@@ -5,7 +5,7 @@ services:
   region: frankfurt # sau o altă regiune: oregon, singapore etc.
   plan: free
   buildCommand: cd server && bun install
-  startCommand: cd server && bun run index.ts # sau main.ts dacă folosești alt fișier
+  startCommand: cd server && bun run .src./index.ts # sau main.ts dacă folosești alt fișier
   envVars:
   - key: PORT
     value: 3000 # Render setează automat portul, dar îl poți folosi din process.env.PORT
