@@ -1,10 +1,12 @@
 
-# 🎭 MoodiNeko
+# 🎭 MoodiNeko v2
 
 **MoodiNeko** is a mood-driven anime recommendation platform.  
 Tell us how you feel — we'll tell you what to watch.
 
 Powered by AI. Built with ⚡ **Bun**, 🔥 **Hono**, ⚛️ **React**, and 🌬 **TailwindCSS**.
+
+✨ **Version 2.0 is here!** New Ui. Enhanced with beautiful animations, toast notifications, and keyboard shortcuts.
 
 ---
 
@@ -16,6 +18,12 @@ Powered by AI. Built with ⚡ **Bun**, 🔥 **Hono**, ⚛️ **React**, and 🌬
 - ⚡ Ultra-fast backend powered by Bun and Hono
 - 🎨 Modern, responsive UI built with React and TailwindCSS
 - 💾 Session handling and quick access caching with Redis
+- 🎉 **NEW in v2:**
+  - 💜 New UI 
+  - ✨ Beautiful animations and hover effects
+  - 🍞 Toast notifications for better user feedback
+  - ⌨️ Keyboard shortcuts (Enter to search, Esc to close modals)
+  - 🍃 Sakura leafs falling
 
 ---
 
@@ -81,7 +89,6 @@ OPENAI_API_KEY=
 REDIS_HOST=localhost
 REDIS_PORT=6379
 REDIS_PASSWORD=
-REDIS_UL=
 ```
 
 ```env
@@ -92,7 +99,26 @@ VITE_API_URL=YOUR_SERVER_URL
 
 ## 📌 Project Status
 
-✅ **MoodiNeko is a completed project** — feedback and future contributions are still welcome!
+🚀 **MoodiNeko v2 is now live!** The project has been updated with new features and improvements.
+
+✅ Feedback and future contributions are still welcome!
+
+---
+
+## 📝 Changelog
+
+### v2.0.0
+
+- 💜 New UI design with a fresh and modern look
+- ✨ Added beautiful animations and hover effects to anime cards
+- 🍞 Replaced alert dialogs with modern toast notifications
+- ⌨️ Added keyboard shortcuts:
+  - Press `Enter` to get recommendations
+  - Press `Esc` to close modals
+- 🍃 Sakura leafs falling in the background
+- 🔍 Improved focus management for better accessibility
+- 🔍 Added a filter to organize anime by genres
+- 🔗 Added a share button to share your recommendations
 
 ---
 
