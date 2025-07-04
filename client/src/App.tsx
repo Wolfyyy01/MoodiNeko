@@ -133,7 +133,7 @@ export default function App() {
           }, 100);
           showToast(`Found ${data.recommendations.length} anime recommendations for your mood!`, 'success');
         } else {
-          showToast('No recommendations found for this mood. Try a different one!', 'warning');
+          showToast('No recommendations found for this mood. Try a different one!', 'error');
         }
       } catch (error) {
         console.error('Error fetching recommendations:', error);
@@ -143,7 +143,7 @@ export default function App() {
         setLoading(false);
       }
     } else {
-      showToast('Please enter a mood or select an emoji first', 'warning');
+      showToast('Please enter a mood or select an emoji first', 'error');
     }
   };
   
