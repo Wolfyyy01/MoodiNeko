@@ -37,7 +37,7 @@ Powered by AI. Built with ⚡ **Bun**, 🔥 **Hono**, ⚛️ **React**, and 🌬
 
 ## 🚀 Live Demo
 
-🔗 [Visit MoodiNeko]([https://moodineko.wolfy01.me](https://moodi-neko-fa4jkqn76-wolfyyy01s-projects.vercel.app/)
+🔗 [Visit MoodiNeko](https://moodi-neko-fa4jkqn76-wolfyyy01s-projects.vercel.app/)
 
 ---
 
