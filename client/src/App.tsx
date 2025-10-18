@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Analytics } from "@vercel/analytics/next"
 import FloatingCrystal from './components/FloatingCrystal';
 
 import logo from './assets/logo.png';
@@ -120,6 +121,7 @@ export default function App() {
       )}
 
       <Footer />
+      <Analytics />
     </div>
 
   );
