@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
+import { Analytics } from '@vercel/analytics/react'
 
 // Components
 import AnimeCard from './components/AnimeCard';
@@ -441,6 +442,7 @@ export default function App() {
       </div>
       
       <Footer />
+      <Analytics />
     </div>
 
   );
