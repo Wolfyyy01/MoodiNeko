@@ -140,7 +140,7 @@ See the [LICENSE](./LICENSE) file for details.
 ## 👤 Author
 
 Made with 💜 by **Wolfy**
- 🐙 [GitHub](https://github.com/wolfy01)
+ 🐙 [GitHub](https://github.com/wolfyyy01)
 
 ---
 
@@ -151,3 +151,4 @@ Made with 💜 by **Wolfy**
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" style="border-radius:8px;" />
   </a>
 </p>
+
